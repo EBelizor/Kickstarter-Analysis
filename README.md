@@ -22,6 +22,14 @@ December proved to be the worst date to launch fundraising campaigns with only a
 
 ### Analysis of Outcomes Based on Goals
 
+Before creating the chart, and pulling the data for succesful outcomes it is easy to run into some issues. Creating and Editing the CountIFS() function can present some challenges, especially after that deceptive ">1000" success you have in the B2 cell. After this it is natural to expand the formula that we have in our cell and expand the argument of the ">1000" cell that we have in B2 to B3 and get something like this. 
+![](Issue.png)
+
+This issue will create a 0 in the cell value colomn and that is because the stacked arguments create confusion for excel. We have to remember to write out the arguments for the count if functions one at a time like below. 
+![](Solution.png)
+
+Creting our commands like this is important because the code reads each argument one at a time and specifies results based on the argument added. After this we are ready to advance and eventually create our table chart. 
+
 When viewing outcomes based on goals we would approach it expecting an almost supply and demand like curve, with successful campaigns decreasing the higher the goal and failures increasing. While the graphs begin and eventually end on that note, our line graph takes a flew flips near the end of the data, before eventually regrouping. We would definitely need to take a deeper look at the campaigns between 35000 and 44999 in order to see what drove the unexpected outcomes. However for the most part the data seems to show that increasing campaign goals increase the likelihood of a failed campaign goal, so it is possible that if Louise did not reach her goal she might have set the bar too high. 
  
 ## Results
