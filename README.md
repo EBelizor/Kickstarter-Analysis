@@ -8,7 +8,11 @@ Our initial analysis revealed that “Theatre Plays” were the most successful 
 
 ## Analysis and Challenges
 
-In order to properly analyze the launch dates we must create a line chart in order to properly view any trends that occur over time. The first challenge we will run into is the “date created conversion” column, we see that the data is very precise in the dates which would make for a messy filtering process. ![] To alleviate this issue we must create a new column in our Kickstarter sheet  titled “years” in order to properly view the data. We will use the Year() function and select the “date created conversion” column in order to generate the year created for that specific project. 
+In order to properly analyze the launch dates we must create a line chart in order to properly view any trends that occur over time. The first challenge we run into is when we create our pivot table in order to properly visualize the data. When our pivot table Axis is created with the "Date created conversions" column we see that there are tabs within each colomn, first by years, then quarters and finally the date created. 
+![](Challenge_1.png)
+
+In order to fix this issue we must remove the years and quarters colomn from our axis, since we already have a years filter that is derived from the date created conversions tab and to remove the quarters because we are interested in the specific dates that are seen. Making these two changes will make for a cleaner and much easier to read pivot chart. 
+![](Challenge_2.png)
 
 ### Analysis of Outcomes Based on Launch Date
 
